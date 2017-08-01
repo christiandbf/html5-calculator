@@ -1,4 +1,4 @@
-# html5-calculator
+# Calculator HTML5
 
 Build a JavaScript Calculator - Freecodecamp
 
