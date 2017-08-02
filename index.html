@@ -12,58 +12,47 @@
 <body>
     <div class="container">
         <!-- Calculator -->
-        
         <div class="calculator">
             <!-- Display -->
             <div class="calculator__display right-align">
-                <p class="calculator__display__content">
-                    0
-                </p>
+                <span class="calculator__display__content" id="content-display">To turn on press AC</span>
             </div>
             <!-- Display -->
 
             <!-- Keypad -->
             <div class="calculator__keypad">
-                <div class="calculator__keypad__rowbuttons">
-                    <button class="waves-effect waves-light btn">AC</button>
-                    <button class="waves-effect waves-light btn">CE</button>
-                    <button class="waves-effect waves-light btn">&divide;</button>
-                    <button class="waves-effect waves-light btn">X</button>
-                </div>
-
-                <div class="calculator__keypad__rowbuttons">
-                    <button class="waves-effect waves-light btn">7</button>
-                    <button class="waves-effect waves-light btn">8</button>
-                    <button class="waves-effect waves-light btn">9</button>
-                    <button class="waves-effect waves-light btn">-</button>
-                </div>
-
-                <div class="calculator__keypad__rowbuttons">
-                    <button class="waves-effect waves-light btn">4</button>
-                    <button class="waves-effect waves-light btn">5</button>
-                    <button class="waves-effect waves-light btn">6</button>
-                    <button class="waves-effect waves-light btn">+</button>
-                </div>
-
-                <div class="calculator__keypad__rowbuttons">
-                    <button class="waves-effect waves-light btn">1</button>
-                    <button class="waves-effect waves-light btn">2</button>
-                    <button class="waves-effect waves-light btn">3</button>    
-                    <button class="waves-effect waves-light btn">=</button>
-                </div>
-
-                <div class="calculator__keypad__rowbuttons">
-                    <button class="waves-effect waves-light btn">0</button>
-                    <button class="waves-effect waves-light btn">.</button>                
-                </div>                    
+                <button class="waves-effect waves-light btn" id="ac-button">AC</button>
+                <button class="waves-effect waves-light btn" id="ce-button">CE</button>
+                <button class="waves-effect waves-light btn btn-operation" id="split-button" name="divide">&divide;</button>
+                <button class="waves-effect waves-light btn btn-operation" id="multiply-button" name="multiply">X</button>
+                <button class="waves-effect waves-light btn btn-number">7</button>
+                <button class="waves-effect waves-light btn btn-number">8</button>
+                <button class="waves-effect waves-light btn btn-number">9</button>
+                <button class="waves-effect waves-light btn btn-operation" id="subtract-button" name="subtract">-</button>
+                <button class="waves-effect waves-light btn btn-number">4</button>
+                <button class="waves-effect waves-light btn btn-number">5</button>
+                <button class="waves-effect waves-light btn btn-number">6</button>
+                <button class="waves-effect waves-light btn btn-operation" id="add-button" name="add">+</button>
+                <button class="waves-effect waves-light btn btn-number">1</button>
+                <button class="waves-effect waves-light btn btn-number">2</button>
+                <button class="waves-effect waves-light btn btn-number">3</button>
+                <button class="waves-effect waves-light btn" id="point-button">.</button>
+                <button class="waves-effect waves-light btn btn-number">0</button>
+                <button class="waves-effect waves-light btn" id="result-button" name="iqual">=</button>
             </div>
             <!-- Keypad -->
 
+            <!-- Footer -->
+            <div class="footer">
+                <footer class="center-align">
+                    <span>Coded by <a href="https://github.com/christiandbf" target="_blank">christiandbf</a></span>
+                </footer>
+            </div>
+            <!-- Footer -->
+
         </div>
         <!-- Calculator -->
-
     </div>
-
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
