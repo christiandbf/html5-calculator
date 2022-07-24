@@ -1,74 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <meta name="Author" description="Christian Barrios"></meta>
-</head>
-
-<body>
-    <div class="container">
-        <!-- Calculator -->
-        <div class="calculator">
-            <!-- Display -->
-            <div class="calculator__display right-align">
-                <span class="calculator__display__content" id="content-display">To turn on press AC</span>
-            </div>
-            <!-- Display -->
-
-            <!-- Keypad -->
-            <div class="calculator__keypad">
-                <button class="waves-effect waves-light btn" id="ac-button">AC</button>
-                <button class="waves-effect waves-light btn" id="ce-button">CE</button>
-                <button class="waves-effect waves-light btn btn-operation" id="split-button" name="divide">&divide;</button>
-                <button class="waves-effect waves-light btn btn-operation" id="multiply-button" name="multiply">X</button>
-                <button class="waves-effect waves-light btn btn-number">7</button>
-                <button class="waves-effect waves-light btn btn-number">8</button>
-                <button class="waves-effect waves-light btn btn-number">9</button>
-                <button class="waves-effect waves-light btn btn-operation" id="subtract-button" name="subtract">-</button>
-                <button class="waves-effect waves-light btn btn-number">4</button>
-                <button class="waves-effect waves-light btn btn-number">5</button>
-                <button class="waves-effect waves-light btn btn-number">6</button>
-                <button class="waves-effect waves-light btn btn-operation" id="add-button" name="add">+</button>
-                <button class="waves-effect waves-light btn btn-number">1</button>
-                <button class="waves-effect waves-light btn btn-number">2</button>
-                <button class="waves-effect waves-light btn btn-number">3</button>
-                <button class="waves-effect waves-light btn" id="point-button">.</button>
-                <button class="waves-effect waves-light btn btn-number">0</button>
-                <button class="waves-effect waves-light btn" id="result-button" name="iqual">=</button>
-            </div>
-            <!-- Keypad -->
-
-            <!-- Footer -->
-            <div class="footer">
-                <footer class="center-align">
-                    <span>Coded by <a href="https://github.com/christiandbf" target="_blank">christiandbf</a></span>
-                </footer>
-            </div>
-            <!-- Footer -->
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="calculator">
+        <div class="calculator__brand">
+          <h1 class="calculator__title">Casio</h1>
+          <span class="calculator__model">CH04</span>
         </div>
-        <!-- Calculator -->
-    </div>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-
-    <link rel="stylesheet" href="./css/style.css">
-
-    <script src="./js/calculator.js"></script>
-
-</body>
-
+        <input id="calculator__display" class="calculator__display" type="text" disabled placeholder="0" />
+        <div class="calculator__pad">
+          <button data-function="AC" class="calculator__button">AC</button>
+          <button data-function="CE" class="calculator__button">CE</button>
+          <button data-function="OPERATION" class="calculator__button">&divide;</button>
+          <button data-function="OPERATION" class="calculator__button">*</button>
+          <button data-function="DIGIT" class="calculator__button">7</button>
+          <button data-function="DIGIT" class="calculator__button">8</button>
+          <button data-function="DIGIT" class="calculator__button">9</button>
+          <button data-function="OPERATION" class="calculator__button">-</button>
+          <button data-function="DIGIT" class="calculator__button">4</button>
+          <button data-function="DIGIT" class="calculator__button">5</button>
+          <button data-function="DIGIT" class="calculator__button">6</button>
+          <button data-function="OPERATION" class="calculator__button">+</button>
+          <button data-function="DIGIT" class="calculator__button">1</button>
+          <button data-function="DIGIT" class="calculator__button">2</button>
+          <button data-function="DIGIT" class="calculator__button">3</button>
+          <button data-function="POINT" class="calculator__button">.</button>
+          <button data-function="DIGIT" class="calculator__button calculator__button__double">0</button>
+          <button data-function="EQUAL" class="calculator__button calculator__button__double">=</button>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
