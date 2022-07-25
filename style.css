@@ -50,6 +50,7 @@ main {
   font-size: 1rem;
   padding: 0.2em 0.1em;
   margin: 0.5em 0;
+  background-color: #efefef;
 }
 
 .calculator__pad {
@@ -63,6 +64,7 @@ main {
   flex: 0 1 25%;
   border: none;
   height: 3rem;
+  background-color: #efefef;
 }
 
 .calculator__button:hover,
